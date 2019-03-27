@@ -1,0 +1,44 @@
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+body {
+	font-family: sans-serif;
+}
+
+p {
+	padding: 5px;
+}
+
+#mainContainer {
+	list-style: none;
+	width: 500px;
+	margin: 100px;
+	border: 1px solid rgb(233,235,238);
+	padding: 0px;
+}
+
+h2 {
+	border-bottom: 1px solid rgb(233,235,238);
+	margin: 0px;
+	padding: 0px;
+	font-size: 18px;
+}
+
+#mainContainer li .content {
+	overflow: hidden;
+	height: 0px;
+	transition:height 1s;
+}
+
+#mainContainer li .content.clicked {
+	height: 165px;
+}
+
+#mainContainer h2 a {
+	background-color: rgb(68,105,176);
+	text-decoration: none;
+	display: block;
+	color: white;
+	font-weight: lighter;
+	padding: 10px;
+}
